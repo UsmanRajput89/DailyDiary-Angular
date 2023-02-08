@@ -15,27 +15,29 @@ this is the requirements gathered for my todo app
 
 ## Here's a text-based representation of the ERD:## 
 
-**User**
-ID (primary key)
-Email
-Password
+Here we have table names as headings and table attributes as enteries inside
 
-**Task**
-ID (primary key)
-User ID (foreign key referencing User)
-Description
-Due Date
-Priority
-Category ID (foreign key referencing Category)
+### Users ###
+- ID (primary key)
+- Email
+- Password
 
-**Reminder**
-ID (primary key)
-Task ID (foreign key referencing Task)
-Reminder Date
+### Tasks ###
+- ID (primary key)
+- User ID (foreign key referencing User)
+- Description
+- Due Date
+- Priority
+- Category ID (foreign key referencing Category)
 
-**Category**
-ID (primary key)
-Name
+### Reminder ###
+- ID (primary key)
+- Task ID (foreign key referencing Task)
+- Reminder Date
+
+### Categories ###
+- ID (primary key)
+- Name
 
 
 *This ERD represents the relationships between the entities (tables) in your task manager. A User can have many Tasks, a Task can have many Reminders, and a Task can belong to one Category. The relationships are represented by the foreign keys, which connect one entity to another.*
