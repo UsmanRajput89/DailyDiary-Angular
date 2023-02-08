@@ -1,0 +1,14 @@
+
+<input type="text" name="task" placeholder="Todo" #newTask>
+<button (click)="add(newTask.value)">Add Task</button>
+
+
+<ul>
+    <li *ngFor="let task of tasks" [class.is-done]="task.isDone"> 
+        {{task.title}} | 
+        <button (click)="remove(task)">Remove</button> | 
+        <button (click)="task.toggleIsDone()">
+            {{task.isDone? "Undo": "Done"}}
+        </button>
+    </li>
+</ul>
